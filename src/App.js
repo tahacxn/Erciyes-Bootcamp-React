@@ -7,10 +7,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import IncreaseDiv from "./State/IncreaseDiv";
 import RandomColor from "./State/RandomColor";
 import RandomNumberAdd from "./State/RandomNumberAdd";
+import RemoveRandomNumber from "./State/RemoveRandomNumber";
 
 function App() {
   return (
   <>
+  <RemoveRandomNumber/>
   <IncreaseDiv/>
   <RandomColor/>
   <RandomNumberAdd/>
