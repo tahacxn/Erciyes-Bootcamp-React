@@ -4,18 +4,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import Home from "./pages/Home"
 // import Products from "./pages/Products"
 // import ProductsPage from "./pages/ProductsPage";
-import IncreaseDiv from "./State/IncreaseDiv";
-import RandomColor from "./State/RandomColor";
-import RandomNumberAdd from "./State/RandomNumberAdd";
-import RemoveRandomNumber from "./State/RemoveRandomNumber";
+// import IncreaseDiv from "./State/IncreaseDiv";
+// import RandomColor from "./State/RandomColor";
+// import RandomNumberAdd from "./State/RandomNumberAdd";
+// import RemoveRandomNumber from "./State/RemoveRandomNumber";
+import ProductFetch from "./State/ProductFetch";
 
 function App() {
   return (
   <>
-  <RemoveRandomNumber/>
+  <ProductFetch/>
+  {/* <RemoveRandomNumber/>
   <IncreaseDiv/>
   <RandomColor/>
-  <RandomNumberAdd/>
+  <RandomNumberAdd/> */}
   {/* <ul style={{display:'flex', justifyContent:'space-evenly'}}>
     <li><Link to='/'>Home</Link></li>
     <li><Link to='/products'>Products</Link></li>
