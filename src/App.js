@@ -1,6 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-  import {Route,Routes} from "react-router-dom"
+  // import {Route,Routes} from "react-router-dom"
+import Post from "./State/Post";
 // import Home from "./pages/Home"
 // import Products from "./pages/Products"
 // import ProductsPage from "./pages/ProductsPage";
@@ -9,17 +10,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import RandomNumberAdd from "./State/RandomNumberAdd";
 // import RemoveRandomNumber from "./State/RemoveRandomNumber";
 // import ProductFetch from "./State/ProductFetch";
- import ProductPage from "./State/ProductPage";
-import ProductDetail from "./State/ProductDetail";
+//  import ProductPage from "./State/ProductPage";
+// import ProductDetail from "./State/ProductDetail";
 // import ProductDetail from "./State/ProductDetail";
 
 function App() {
   return (
   <>
-  <Routes>
+  <Post/>
+  {/* <Routes>
     <Route path="/" element={<ProductPage/>}></Route>
     <Route path="/products/:id" element={<ProductDetail/>}></Route>
-  </Routes>
+  </Routes> */}
   {/* <ProductFetch/> */}
   {/* <RemoveRandomNumber/>
   <IncreaseDiv/>
