@@ -1,6 +1,6 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import {Link,Route,Routes} from "react-router-dom"
+  import {Route,Routes} from "react-router-dom"
 // import Home from "./pages/Home"
 // import Products from "./pages/Products"
 // import ProductsPage from "./pages/ProductsPage";
@@ -8,12 +8,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import RandomColor from "./State/RandomColor";
 // import RandomNumberAdd from "./State/RandomNumberAdd";
 // import RemoveRandomNumber from "./State/RemoveRandomNumber";
-import ProductFetch from "./State/ProductFetch";
+// import ProductFetch from "./State/ProductFetch";
+ import ProductPage from "./State/ProductPage";
+import ProductDetail from "./State/ProductDetail";
+// import ProductDetail from "./State/ProductDetail";
 
 function App() {
   return (
   <>
-  <ProductFetch/>
+  <Routes>
+    <Route path="/" element={<ProductPage/>}></Route>
+    <Route path="/products/:id" element={<ProductDetail/>}></Route>
+  </Routes>
+  {/* <ProductFetch/> */}
   {/* <RemoveRandomNumber/>
   <IncreaseDiv/>
   <RandomColor/>
